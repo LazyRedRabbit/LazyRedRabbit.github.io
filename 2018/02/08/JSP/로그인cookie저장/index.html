@@ -3,23 +3,23 @@
 <head>
     <meta charset="utf-8">
     
-    <title>내장객체의 사용 | 게으른 토끼</title>
+    <title>로그인 Cookie 저장하는 방법 | 게으른 토끼</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="" />
     
-    <meta name="description" content="123456789101112131415&amp;lt;%// 내장객체 : 동적할당 하지않고 사용할 수 있는 Object == 암사객체request.setCharacterEncoding(&amp;quot;utf-8&amp;quot;);String name = request.getParameter(&amp;quot;name&amp;quot;);System.out.println(&amp;quot;name">
+    <meta name="description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495&amp;lt;%@ page languag">
 <meta property="og:type" content="article">
-<meta property="og:title" content="내장객체의 사용">
-<meta property="og:url" content="http://LazyRedRabbit.github.io/2018/02/05/JSP/내장객체의 사용/index.html">
+<meta property="og:title" content="로그인 Cookie 저장하는 방법">
+<meta property="og:url" content="http://LazyRedRabbit.github.io/2018/02/08/JSP/로그인cookie저장/index.html">
 <meta property="og:site_name" content="게으른 토끼">
-<meta property="og:description" content="123456789101112131415&amp;lt;%// 내장객체 : 동적할당 하지않고 사용할 수 있는 Object == 암사객체request.setCharacterEncoding(&amp;quot;utf-8&amp;quot;);String name = request.getParameter(&amp;quot;name&amp;quot;);System.out.println(&amp;quot;name">
+<meta property="og:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495&amp;lt;%@ page languag">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-02-05T12:59:13.635Z">
+<meta property="og:updated_time" content="2018-02-08T09:56:28.715Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="내장객체의 사용">
-<meta name="twitter:description" content="123456789101112131415&amp;lt;%// 내장객체 : 동적할당 하지않고 사용할 수 있는 Object == 암사객체request.setCharacterEncoding(&amp;quot;utf-8&amp;quot;);String name = request.getParameter(&amp;quot;name&amp;quot;);System.out.println(&amp;quot;name">
+<meta name="twitter:title" content="로그인 Cookie 저장하는 방법">
+<meta name="twitter:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495&amp;lt;%@ page languag">
     
 
     
@@ -136,14 +136,14 @@
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-JSP/내장객체의 사용" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-JSP/로그인cookie저장" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        내장객체의 사용
+        로그인 Cookie 저장하는 방법
         </h1>
     
 
@@ -153,8 +153,8 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2018/02/05/JSP/내장객체의 사용/" class="article-date">
-            <time datetime="2018-02-05T12:56:56.000Z" itemprop="datePublished">2018-02-05</time>
+        <a href="/2018/02/08/JSP/로그인cookie저장/" class="article-date">
+            <time datetime="2018-02-08T09:52:38.982Z" itemprop="datePublished">2018-02-08</time>
         </a>
     </div>
 
@@ -163,7 +163,7 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line">// 내장객체 : 동적할당 하지않고 사용할 수 있는 Object == 암사객체</span><br><span class="line">request.setCharacterEncoding(&quot;utf-8&quot;);</span><br><span class="line"></span><br><span class="line">String name = request.getParameter(&quot;name&quot;);</span><br><span class="line">System.out.println(&quot;name = &quot; + name);</span><br><span class="line"></span><br><span class="line">String num = request.getParameter(&quot;num&quot;);</span><br><span class="line">System.out.println(&quot;num = &quot; + num);</span><br><span class="line"></span><br><span class="line">String[] strArr = request.getParameterValues(&quot;hobby&quot;);</span><br><span class="line">for(int i = 0;i &lt; strArr.length; i++)&#123;</span><br><span class="line">	out.println(strArr[i] + &quot;&lt;br&gt;&quot;);</span><br><span class="line">&#125;</span><br><span class="line">%&gt;</span><br></pre></td></tr></table></figure>
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page language=&quot;java&quot; contentType=&quot;text/html; charset=UTF-8&quot;</span><br><span class="line">    pageEncoding=&quot;UTF-8&quot;%&gt;</span><br><span class="line">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;</span><br><span class="line">&lt;title&gt;Insert title here&lt;/title&gt;</span><br><span class="line">&lt;script src=&quot;http://code.jquery.com/jquery-latest.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;!-- 쿠키설정링크 --&gt;</span><br><span class="line">&lt;script src=&quot;http://lab.alexcican.com/set_cookies/cookie.js&quot; type=&quot;text/javascript&quot; &gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">.center&#123;</span><br><span class="line">	margin: auto;</span><br><span class="line">	width: 25%;</span><br><span class="line">	border: 3px solid #ff0000;</span><br><span class="line">	padding: 10px;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;h1&gt;로그인&lt;/h1&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;center&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;form id=&quot;_frmForm&quot;  action=&quot;NewFile.jsp&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;table border=&quot;1&quot;&gt;</span><br><span class="line">&lt;tr&gt;</span><br><span class="line">	&lt;td&gt;아이디&lt;/td&gt;</span><br><span class="line">	&lt;td&gt;</span><br><span class="line">		&lt;input type=&quot;text&quot; id=&quot;_userid&quot; name=&quot;id&quot; size=&quot;20&quot;</span><br><span class="line">			data-msg=&quot;아이디를&quot;&gt;</span><br><span class="line">		&lt;input type=&quot;checkbox&quot; id=&quot;_chk_save_id&quot;&gt;ID 저장</span><br><span class="line">	&lt;/td&gt;</span><br><span class="line">&lt;/tr&gt;</span><br><span class="line">&lt;tr&gt;</span><br><span class="line">	&lt;td&gt;패스워드&lt;/td&gt;</span><br><span class="line">	&lt;td&gt;</span><br><span class="line">		&lt;input type=&quot;text&quot; id=&quot;_pwd&quot; name=&quot;pwd&quot; size=&quot;20&quot; data-msg=&quot;암호를&quot;&gt;</span><br><span class="line">	&lt;/td&gt;</span><br><span class="line">&lt;/tr&gt;</span><br><span class="line">&lt;tr&gt;</span><br><span class="line">	&lt;td colsapn=&quot;2&quot; style=&quot;height: 50px; text-align: center;&quot;&gt;</span><br><span class="line">		&lt;a href=&quot;#none&quot; id=&quot;_btnLogin&quot; title=&quot;로그인&quot;&gt;</span><br><span class="line">			&lt;img alt=&quot;로그인&quot; src=&quot;login_btn.jpg&quot;&gt;</span><br><span class="line">		&lt;/a&gt;</span><br><span class="line">	&lt;/td&gt;</span><br><span class="line">&lt;/tr&gt;</span><br><span class="line"></span><br><span class="line">&lt;/table&gt;</span><br><span class="line">&lt;/form&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">$(&quot;#_btnLogin&quot;).click(function () &#123;</span><br><span class="line"></span><br><span class="line">	if($(&quot;#_userid&quot;).val() == &quot;&quot;)&#123;</span><br><span class="line">		alert($(&quot;#_userid&quot;).attr(&quot;data-msg&quot;) + &quot; 입력해 주세요&quot;);</span><br><span class="line">	&#125;else if($(&quot;#_userid&quot;).val() == &quot;&quot;)&#123;</span><br><span class="line">		alert($(&quot;#_pwd&quot;).attr(&quot;data-msg&quot;) + &quot; 입력해 주세요&quot;);</span><br><span class="line">	&#125;else&#123;</span><br><span class="line">		$(&quot;#_frmForm&quot;).attr(&quot;target&quot;, &quot;_self&quot;).submit();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">var user_id = $.cookie(&quot;user_id&quot;);</span><br><span class="line">if(user_id != null)&#123;</span><br><span class="line">	$(&quot;#_userid&quot;).val(user_id);</span><br><span class="line">	$(&quot;#_chk_save_id&quot;).attr(&quot;checked&quot;, &quot;checked&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$(&quot;#_chk_save_id&quot;).click(function () &#123;</span><br><span class="line">	//	체크박스는 기본이 배열</span><br><span class="line">	if($(&apos;input:checkbox[id=&quot;_chk_save_id&quot;]&apos;).is(&quot;:checked&quot;))&#123;</span><br><span class="line">	//	alert(&quot;checked&quot;);</span><br><span class="line">		if($(&quot;#_userid&quot;).val() == &quot;&quot;)&#123;</span><br><span class="line">			alert(&quot;아이디를 입력해주세요&quot;);</span><br><span class="line">			$(this).attr(&quot;checked&quot;, false);</span><br><span class="line">		&#125;else&#123;</span><br><span class="line">			$.cookie(&quot;user_id&quot;, $(&quot;#_userid&quot;).val(), &#123;expires:7, path:&apos;/&apos;&#125;)		// expires 기한 :일수	path: /는 모든 쿠키를 다 가져오겠다</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	else&#123;</span><br><span class="line">	//	alert(&quot;no checked&quot;);</span><br><span class="line">		$.removeCookie(&quot;user_id&quot;, &#123; path: &apos;/&apos; &#125;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
         </div>
         <footer class="article-footer">
@@ -171,7 +171,7 @@
 
 
 
-    <a data-url="http://LazyRedRabbit.github.io/2018/02/05/JSP/내장객체의 사용/" data-id="cjda8i90m0008ggpcvldkvw01" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="http://LazyRedRabbit.github.io/2018/02/08/JSP/로그인cookie저장/" data-id="cjdebtbbn0007hspcl9sv2n3m" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -308,20 +308,20 @@
         
 <nav id="article-nav">
     
-        <a href="/2018/02/08/JSP/ajax2/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2018/02/08/JSP/ajax/" id="article-nav-newer" class="article-nav-link-wrap">
         <strong class="article-nav-caption">새로운</strong>
         <p class="article-nav-title">
         
-            AJAX 2
+            AJAX 1
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
     
     
-        <a href="/2018/02/05/JSP/JSP사이의 객체전달/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/02/08/JSP/jsp태그/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">오래된</strong>
-        <p class="article-nav-title">JSP사이의 객체전달</p>
+        <p class="article-nav-title">JSP 태그</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -524,7 +524,7 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'http://LazyRedRabbit.github.io/2018/02/05/JSP/내장객체의 사용/';
+    var disqus_url = 'http://LazyRedRabbit.github.io/2018/02/08/JSP/로그인cookie저장/';
     
     (function() {
     var dsq = document.createElement('script');

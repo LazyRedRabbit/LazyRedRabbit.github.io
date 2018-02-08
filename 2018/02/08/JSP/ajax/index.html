@@ -3,23 +3,23 @@
 <head>
     <meta charset="utf-8">
     
-    <title>내장객체의 사용 | 게으른 토끼</title>
+    <title>AJAX 1 | 게으른 토끼</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="" />
     
-    <meta name="description" content="123456789101112131415&amp;lt;%// 내장객체 : 동적할당 하지않고 사용할 수 있는 Object == 암사객체request.setCharacterEncoding(&amp;quot;utf-8&amp;quot;);String name = request.getParameter(&amp;quot;name&amp;quot;);System.out.println(&amp;quot;name">
+    <meta name="description" content="AJAX : Asynchronous Java Scirpt Xml        JQuery 소속, 기법        폼 페이지를 유지하고 데이터를 불러오는게 목적 12345678910&amp;lt;p id=&amp;quot;result&amp;quot;&amp;gt;여기가 id = result 해당&amp;lt;/p&amp;gt;&amp;lt;button&amp;gt;버튼&amp;lt;/button&amp;gt;&amp;lt;scrip">
 <meta property="og:type" content="article">
-<meta property="og:title" content="내장객체의 사용">
-<meta property="og:url" content="http://LazyRedRabbit.github.io/2018/02/05/JSP/내장객체의 사용/index.html">
+<meta property="og:title" content="AJAX 1">
+<meta property="og:url" content="http://LazyRedRabbit.github.io/2018/02/08/JSP/ajax/index.html">
 <meta property="og:site_name" content="게으른 토끼">
-<meta property="og:description" content="123456789101112131415&amp;lt;%// 내장객체 : 동적할당 하지않고 사용할 수 있는 Object == 암사객체request.setCharacterEncoding(&amp;quot;utf-8&amp;quot;);String name = request.getParameter(&amp;quot;name&amp;quot;);System.out.println(&amp;quot;name">
+<meta property="og:description" content="AJAX : Asynchronous Java Scirpt Xml        JQuery 소속, 기법        폼 페이지를 유지하고 데이터를 불러오는게 목적 12345678910&amp;lt;p id=&amp;quot;result&amp;quot;&amp;gt;여기가 id = result 해당&amp;lt;/p&amp;gt;&amp;lt;button&amp;gt;버튼&amp;lt;/button&amp;gt;&amp;lt;scrip">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-02-05T12:59:13.635Z">
+<meta property="og:updated_time" content="2018-02-08T10:08:16.179Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="내장객체의 사용">
-<meta name="twitter:description" content="123456789101112131415&amp;lt;%// 내장객체 : 동적할당 하지않고 사용할 수 있는 Object == 암사객체request.setCharacterEncoding(&amp;quot;utf-8&amp;quot;);String name = request.getParameter(&amp;quot;name&amp;quot;);System.out.println(&amp;quot;name">
+<meta name="twitter:title" content="AJAX 1">
+<meta name="twitter:description" content="AJAX : Asynchronous Java Scirpt Xml        JQuery 소속, 기법        폼 페이지를 유지하고 데이터를 불러오는게 목적 12345678910&amp;lt;p id=&amp;quot;result&amp;quot;&amp;gt;여기가 id = result 해당&amp;lt;/p&amp;gt;&amp;lt;button&amp;gt;버튼&amp;lt;/button&amp;gt;&amp;lt;scrip">
     
 
     
@@ -136,14 +136,14 @@
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-JSP/내장객체의 사용" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-JSP/ajax" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        내장객체의 사용
+        AJAX 1
         </h1>
     
 
@@ -153,8 +153,8 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2018/02/05/JSP/내장객체의 사용/" class="article-date">
-            <time datetime="2018-02-05T12:56:56.000Z" itemprop="datePublished">2018-02-05</time>
+        <a href="/2018/02/08/JSP/ajax/" class="article-date">
+            <time datetime="2018-02-08T09:53:39.007Z" itemprop="datePublished">2018-02-08</time>
         </a>
     </div>
 
@@ -163,7 +163,25 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line">// 내장객체 : 동적할당 하지않고 사용할 수 있는 Object == 암사객체</span><br><span class="line">request.setCharacterEncoding(&quot;utf-8&quot;);</span><br><span class="line"></span><br><span class="line">String name = request.getParameter(&quot;name&quot;);</span><br><span class="line">System.out.println(&quot;name = &quot; + name);</span><br><span class="line"></span><br><span class="line">String num = request.getParameter(&quot;num&quot;);</span><br><span class="line">System.out.println(&quot;num = &quot; + num);</span><br><span class="line"></span><br><span class="line">String[] strArr = request.getParameterValues(&quot;hobby&quot;);</span><br><span class="line">for(int i = 0;i &lt; strArr.length; i++)&#123;</span><br><span class="line">	out.println(strArr[i] + &quot;&lt;br&gt;&quot;);</span><br><span class="line">&#125;</span><br><span class="line">%&gt;</span><br></pre></td></tr></table></figure>
+            <p>AJAX : Asynchronous Java Scirpt Xml<br>        JQuery 소속, 기법<br>        폼 페이지를 유지하고 데이터를 불러오는게 목적<br><!-- index.jsp
+        form
+        <input type="text" name="num">
+        <input type="text" name="name">
+    비동기화 자체처리?
+    레스트풀?
+        --></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;p id=&quot;result&quot;&gt;여기가 id = result 해당&lt;/p&gt;</span><br><span class="line">&lt;button&gt;버튼&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">$(document).ready(function () &#123;</span><br><span class="line">	$(&quot;button&quot;).click(function () &#123;</span><br><span class="line">		$(&quot;#result&quot;).load(&quot;test.html #session01&quot;);</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>제이쿼리의 load로 test.html의 session01태그값을 불러온다<br>버튼 누를 시 출력 session01의 값 출력</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;p id=&quot;result&quot;&gt;여기가 id = result 해당&lt;/p&gt;</span><br><span class="line">&lt;button&gt;버튼&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">$(document).ready(function () &#123;</span><br><span class="line">	$(&quot;button&quot;).click(function () &#123;</span><br><span class="line">		$(&quot;#result&quot;).load(&quot;test.jsp&quot;, &quot;t1=abc&amp;t2=bcd&quot;);	//	test.jsp의 t1 t2에 데이터를 넣음</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>load 하면서 t1 t2에 값을 넣는다<br>출력값 t1=abc t2=bcd</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;p id=&quot;result&quot;&gt;여기가 id = result 해당&lt;/p&gt;</span><br><span class="line">&lt;button&gt;버튼&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">$(document).ready(function () &#123;</span><br><span class="line">	$(&quot;button&quot;).click(function () &#123;</span><br><span class="line">		$(&quot;#result&quot;).load(&quot;test.jsp&quot;, &#123;t1:&quot;aaa&quot;, t2:&quot;bbb&quot;, t3:&quot;ccc&quot;&#125;);	// json 방식</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>json 방식으로 데이터에 값을 넣고 불러온다</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">$(document).ready(function () &#123;</span><br><span class="line">	$(&quot;button&quot;).click(function () &#123;</span><br><span class="line">		$(&quot;#result&quot;).load(&quot;test.html&quot;, function (data, status, xhr) &#123;</span><br><span class="line"></span><br><span class="line">			$(&quot;#result&quot;).append(&quot;data = &quot; + data + &quot;&lt;br&gt;&quot;);</span><br><span class="line">			$(&quot;#result&quot;).append(&quot;status = &quot; + status + &quot;&lt;br&gt;&quot;);	// success</span><br><span class="line">			$(&quot;#result&quot;).append(&quot;xhr.status = &quot; + xhr.status + &quot;&lt;br&gt;&quot;); // 200</span><br><span class="line">			$(&quot;#result&quot;).append(&quot;xhr.statusText = &quot; + xhr.statusText + &quot;&lt;br&gt;&quot;); // OK</span><br><span class="line"></span><br><span class="line">		&#125;);</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>함수 인자값으로 p태그에 출력값을 추가한다</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;p id=&quot;result&quot;&gt;여기가 id = result 해당&lt;/p&gt;</span><br><span class="line">&lt;button&gt;버튼&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">$(document).ready(function () &#123;</span><br><span class="line">	$(&quot;button&quot;).click(function () &#123;</span><br><span class="line">		$.get(&quot;test.html&quot;, function (data, status, xhr) &#123;</span><br><span class="line">			if(status == &quot;success&quot;)&#123;</span><br><span class="line">				alert(data);</span><br><span class="line"></span><br><span class="line">				$(&quot;#result&quot;).html(data + &quot; &quot; + status + &quot; &quot; + xhr.status);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;);</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>.html? 왜?</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;p id=&quot;result&quot;&gt;여기가 id = result 해당&lt;/p&gt;</span><br><span class="line">&lt;button&gt;버튼&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">$(document).ready(function () &#123;</span><br><span class="line">	$(&quot;button&quot;).click(function () &#123;</span><br><span class="line">		alert(&quot;button click&quot;);</span><br><span class="line">		$.ajax(&#123;</span><br><span class="line">			url:&quot;test.jsp&quot;,			// 이동</span><br><span class="line">			type:&quot;GET&quot;,				// 방식</span><br><span class="line">			data:&quot;t1=AAA&amp;t2=BBB&quot;,	// 넘길 데이터</span><br><span class="line">			success: function (data, status, xhr) &#123;</span><br><span class="line">				alert(&quot;통신성공&quot;);</span><br><span class="line">				// 왔음!!</span><br><span class="line">				$(&quot;#result&quot;).html(data);</span><br><span class="line">			&#125;,</span><br><span class="line">			error: function (xhr, status, error) &#123;</span><br><span class="line">				alert(&quot;통신실패&quot;);</span><br><span class="line">			&#125;,</span><br><span class="line">			complete: function (xhr, status) &#123;</span><br><span class="line">				alert(&quot;통신종료&quot;);</span><br><span class="line">			&#125;,</span><br><span class="line">		&#125;);</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p><br></p>
 
         </div>
         <footer class="article-footer">
@@ -171,7 +189,7 @@
 
 
 
-    <a data-url="http://LazyRedRabbit.github.io/2018/02/05/JSP/내장객체의 사용/" data-id="cjda8i90m0008ggpcvldkvw01" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="http://LazyRedRabbit.github.io/2018/02/08/JSP/ajax/" data-id="cjdebssxp0004hspcjrzr9los" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -308,20 +326,10 @@
         
 <nav id="article-nav">
     
-        <a href="/2018/02/08/JSP/ajax2/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">새로운</strong>
-        <p class="article-nav-title">
-        
-            AJAX 2
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2018/02/05/JSP/JSP사이의 객체전달/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/02/08/JSP/로그인cookie저장/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">오래된</strong>
-        <p class="article-nav-title">JSP사이의 객체전달</p>
+        <p class="article-nav-title">로그인 Cookie 저장하는 방법</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -524,7 +532,7 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'http://LazyRedRabbit.github.io/2018/02/05/JSP/내장객체의 사용/';
+    var disqus_url = 'http://LazyRedRabbit.github.io/2018/02/08/JSP/ajax/';
     
     (function() {
     var dsq = document.createElement('script');

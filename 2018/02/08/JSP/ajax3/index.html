@@ -3,23 +3,23 @@
 <head>
     <meta charset="utf-8">
     
-    <title>내장객체의 사용 | 게으른 토끼</title>
+    <title>AJAX 3 | 게으른 토끼</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="" />
     
-    <meta name="description" content="123456789101112131415&amp;lt;%// 내장객체 : 동적할당 하지않고 사용할 수 있는 Object == 암사객체request.setCharacterEncoding(&amp;quot;utf-8&amp;quot;);String name = request.getParameter(&amp;quot;name&amp;quot;);System.out.println(&amp;quot;name">
+    <meta name="description" content="check.jsp123456789&amp;lt;%String number = request.getParameter(&amp;quot;number&amp;quot;);String id = request.getParameter(&amp;quot;id&amp;quot;);String comment = request.getParameter(&amp;quot;comment&amp;quot;);%&amp;gt;글번호:&amp;lt">
 <meta property="og:type" content="article">
-<meta property="og:title" content="내장객체의 사용">
-<meta property="og:url" content="http://LazyRedRabbit.github.io/2018/02/05/JSP/내장객체의 사용/index.html">
+<meta property="og:title" content="AJAX 3">
+<meta property="og:url" content="http://LazyRedRabbit.github.io/2018/02/08/JSP/ajax3/index.html">
 <meta property="og:site_name" content="게으른 토끼">
-<meta property="og:description" content="123456789101112131415&amp;lt;%// 내장객체 : 동적할당 하지않고 사용할 수 있는 Object == 암사객체request.setCharacterEncoding(&amp;quot;utf-8&amp;quot;);String name = request.getParameter(&amp;quot;name&amp;quot;);System.out.println(&amp;quot;name">
+<meta property="og:description" content="check.jsp123456789&amp;lt;%String number = request.getParameter(&amp;quot;number&amp;quot;);String id = request.getParameter(&amp;quot;id&amp;quot;);String comment = request.getParameter(&amp;quot;comment&amp;quot;);%&amp;gt;글번호:&amp;lt">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-02-05T12:59:13.635Z">
+<meta property="og:updated_time" content="2018-02-08T09:56:23.490Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="내장객체의 사용">
-<meta name="twitter:description" content="123456789101112131415&amp;lt;%// 내장객체 : 동적할당 하지않고 사용할 수 있는 Object == 암사객체request.setCharacterEncoding(&amp;quot;utf-8&amp;quot;);String name = request.getParameter(&amp;quot;name&amp;quot;);System.out.println(&amp;quot;name">
+<meta name="twitter:title" content="AJAX 3">
+<meta name="twitter:description" content="check.jsp123456789&amp;lt;%String number = request.getParameter(&amp;quot;number&amp;quot;);String id = request.getParameter(&amp;quot;id&amp;quot;);String comment = request.getParameter(&amp;quot;comment&amp;quot;);%&amp;gt;글번호:&amp;lt">
     
 
     
@@ -136,14 +136,14 @@
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-JSP/내장객체의 사용" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-JSP/ajax3" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        내장객체의 사용
+        AJAX 3
         </h1>
     
 
@@ -153,8 +153,8 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2018/02/05/JSP/내장객체의 사용/" class="article-date">
-            <time datetime="2018-02-05T12:56:56.000Z" itemprop="datePublished">2018-02-05</time>
+        <a href="/2018/02/08/JSP/ajax3/" class="article-date">
+            <time datetime="2018-02-08T09:52:38.974Z" itemprop="datePublished">2018-02-08</time>
         </a>
     </div>
 
@@ -163,7 +163,9 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line">// 내장객체 : 동적할당 하지않고 사용할 수 있는 Object == 암사객체</span><br><span class="line">request.setCharacterEncoding(&quot;utf-8&quot;);</span><br><span class="line"></span><br><span class="line">String name = request.getParameter(&quot;name&quot;);</span><br><span class="line">System.out.println(&quot;name = &quot; + name);</span><br><span class="line"></span><br><span class="line">String num = request.getParameter(&quot;num&quot;);</span><br><span class="line">System.out.println(&quot;num = &quot; + num);</span><br><span class="line"></span><br><span class="line">String[] strArr = request.getParameterValues(&quot;hobby&quot;);</span><br><span class="line">for(int i = 0;i &lt; strArr.length; i++)&#123;</span><br><span class="line">	out.println(strArr[i] + &quot;&lt;br&gt;&quot;);</span><br><span class="line">&#125;</span><br><span class="line">%&gt;</span><br></pre></td></tr></table></figure>
+            <p>check.jsp<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line">String number = request.getParameter(&quot;number&quot;);</span><br><span class="line">String id = request.getParameter(&quot;id&quot;);</span><br><span class="line">String comment = request.getParameter(&quot;comment&quot;);</span><br><span class="line">%&gt;</span><br><span class="line"></span><br><span class="line">글번호:&lt;%=number %&gt;&lt;br&gt;</span><br><span class="line">아이디:&lt;%=id %&gt;&lt;br&gt;</span><br><span class="line">comment:&lt;%=comment %&gt;&lt;br&gt;</span><br></pre></td></tr></table></figure></p>
+<p>index.jsp<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div style=&quot;width:500px; margin: auto; margin-top: 100px&quot;&gt;</span><br><span class="line">&lt;form id=&quot;frm&quot;&gt;</span><br><span class="line">	&lt;div&gt;</span><br><span class="line">	&lt;lable&gt;글번호&lt;/lable&gt;</span><br><span class="line">	&lt;input type=&quot;text&quot; name=&quot;number&quot; id=&quot;number&quot;&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">	&lt;div style=&quot;margin-top: 20px&quot;&gt;</span><br><span class="line">		&lt;label&gt;아이디&lt;/label&gt;</span><br><span class="line">		&lt;input type=&quot;text&quot; name=&quot;id&quot; id=&quot;id&quot;&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">	&lt;div style=&quot;margin-top: 20px&quot;&gt;</span><br><span class="line">		&lt;label&gt;코멘트&lt;/label&gt;</span><br><span class="line">		&lt;input type=&quot;text&quot; name=&quot;comment&quot; id=&quot;comment&quot;&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">	&lt;div style=&quot;margin-top: 20px&quot;&gt;</span><br><span class="line">		&lt;input type=&quot;button&quot; value=&quot;button&quot; id=&quot;button&quot;&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">	&lt;br&gt;</span><br><span class="line">	&lt;div id=&quot;ajaxReturn&quot;&gt;결과값&lt;/div&gt;</span><br><span class="line">&lt;/form&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">$(function() &#123;</span><br><span class="line">	$(&quot;#button&quot;).click(function () &#123;</span><br><span class="line">		$.ajax(&#123;</span><br><span class="line">			type:&quot;get&quot;,</span><br><span class="line">			url:&quot;./check.jsp&quot;,</span><br><span class="line">			data:&#123;</span><br><span class="line">				number:$(&apos;#number&apos;).val,</span><br><span class="line">				id:$(&apos;#id&apos;).val,</span><br><span class="line">				comment:$(&apos;#comment&apos;).val</span><br><span class="line">			&#125;,</span><br><span class="line">			success:function(data)&#123;</span><br><span class="line">			//	alert(&quot;success&quot;);</span><br><span class="line">			//	$(&quot;#ajaxReturn&quot;).html(data);</span><br><span class="line">				$(&quot;#ajaxReturn&quot;).html(&quot;사용가능한 아이디 입니다.&quot;);</span><br><span class="line">			&#125;,</span><br><span class="line">			error:function()&#123;</span><br><span class="line">				alert(&quot;error&quot;);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;);</span><br><span class="line">	&#125;);</span><br><span class="line"></span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
 
         </div>
         <footer class="article-footer">
@@ -171,7 +173,7 @@
 
 
 
-    <a data-url="http://LazyRedRabbit.github.io/2018/02/05/JSP/내장객체의 사용/" data-id="cjda8i90m0008ggpcvldkvw01" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="http://LazyRedRabbit.github.io/2018/02/08/JSP/ajax3/" data-id="cjdebt0ez0006hspclrzqajmq" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -308,20 +310,20 @@
         
 <nav id="article-nav">
     
-        <a href="/2018/02/08/JSP/ajax2/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2018/02/08/JSP/jsp태그/" id="article-nav-newer" class="article-nav-link-wrap">
         <strong class="article-nav-caption">새로운</strong>
         <p class="article-nav-title">
         
-            AJAX 2
+            JSP 태그
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
     
     
-        <a href="/2018/02/05/JSP/JSP사이의 객체전달/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/02/08/JSP/ajax2/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">오래된</strong>
-        <p class="article-nav-title">JSP사이의 객체전달</p>
+        <p class="article-nav-title">AJAX 2</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -524,7 +526,7 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'http://LazyRedRabbit.github.io/2018/02/05/JSP/내장객체의 사용/';
+    var disqus_url = 'http://LazyRedRabbit.github.io/2018/02/08/JSP/ajax3/';
     
     (function() {
     var dsq = document.createElement('script');

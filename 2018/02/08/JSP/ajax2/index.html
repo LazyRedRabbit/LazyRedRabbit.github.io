@@ -3,23 +3,23 @@
 <head>
     <meta charset="utf-8">
     
-    <title>내장객체의 사용 | 게으른 토끼</title>
+    <title>AJAX 2 | 게으른 토끼</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="" />
     
-    <meta name="description" content="123456789101112131415&amp;lt;%// 내장객체 : 동적할당 하지않고 사용할 수 있는 Object == 암사객체request.setCharacterEncoding(&amp;quot;utf-8&amp;quot;);String name = request.getParameter(&amp;quot;name&amp;quot;);System.out.println(&amp;quot;name">
+    <meta name="description" content="&amp;lt;!--  text파일 xml파일을 읽어들여 form에 출력 json파일 DB에서 읽어 들여 form에 출력(ID중복확인용) –&amp;gt; 1234567891011121314151617181920212223242526272829303132333435363738394041424344&amp;lt;h2&amp;gt;Ajax Sample&amp;lt;/h2&amp;gt;&amp;lt;p id=&amp;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="내장객체의 사용">
-<meta property="og:url" content="http://LazyRedRabbit.github.io/2018/02/05/JSP/내장객체의 사용/index.html">
+<meta property="og:title" content="AJAX 2">
+<meta property="og:url" content="http://LazyRedRabbit.github.io/2018/02/08/JSP/ajax2/index.html">
 <meta property="og:site_name" content="게으른 토끼">
-<meta property="og:description" content="123456789101112131415&amp;lt;%// 내장객체 : 동적할당 하지않고 사용할 수 있는 Object == 암사객체request.setCharacterEncoding(&amp;quot;utf-8&amp;quot;);String name = request.getParameter(&amp;quot;name&amp;quot;);System.out.println(&amp;quot;name">
+<meta property="og:description" content="&amp;lt;!--  text파일 xml파일을 읽어들여 form에 출력 json파일 DB에서 읽어 들여 form에 출력(ID중복확인용) –&amp;gt; 1234567891011121314151617181920212223242526272829303132333435363738394041424344&amp;lt;h2&amp;gt;Ajax Sample&amp;lt;/h2&amp;gt;&amp;lt;p id=&amp;">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-02-05T12:59:13.635Z">
+<meta property="og:updated_time" content="2018-02-08T09:59:17.659Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="내장객체의 사용">
-<meta name="twitter:description" content="123456789101112131415&amp;lt;%// 내장객체 : 동적할당 하지않고 사용할 수 있는 Object == 암사객체request.setCharacterEncoding(&amp;quot;utf-8&amp;quot;);String name = request.getParameter(&amp;quot;name&amp;quot;);System.out.println(&amp;quot;name">
+<meta name="twitter:title" content="AJAX 2">
+<meta name="twitter:description" content="&amp;lt;!--  text파일 xml파일을 읽어들여 form에 출력 json파일 DB에서 읽어 들여 form에 출력(ID중복확인용) –&amp;gt; 1234567891011121314151617181920212223242526272829303132333435363738394041424344&amp;lt;h2&amp;gt;Ajax Sample&amp;lt;/h2&amp;gt;&amp;lt;p id=&amp;">
     
 
     
@@ -136,14 +136,14 @@
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-JSP/내장객체의 사용" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-JSP/ajax2" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        내장객체의 사용
+        AJAX 2
         </h1>
     
 
@@ -153,8 +153,8 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2018/02/05/JSP/내장객체의 사용/" class="article-date">
-            <time datetime="2018-02-05T12:56:56.000Z" itemprop="datePublished">2018-02-05</time>
+        <a href="/2018/02/08/JSP/ajax2/" class="article-date">
+            <time datetime="2018-02-08T09:52:38.968Z" itemprop="datePublished">2018-02-08</time>
         </a>
     </div>
 
@@ -163,7 +163,12 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line">// 내장객체 : 동적할당 하지않고 사용할 수 있는 Object == 암사객체</span><br><span class="line">request.setCharacterEncoding(&quot;utf-8&quot;);</span><br><span class="line"></span><br><span class="line">String name = request.getParameter(&quot;name&quot;);</span><br><span class="line">System.out.println(&quot;name = &quot; + name);</span><br><span class="line"></span><br><span class="line">String num = request.getParameter(&quot;num&quot;);</span><br><span class="line">System.out.println(&quot;num = &quot; + num);</span><br><span class="line"></span><br><span class="line">String[] strArr = request.getParameterValues(&quot;hobby&quot;);</span><br><span class="line">for(int i = 0;i &lt; strArr.length; i++)&#123;</span><br><span class="line">	out.println(strArr[i] + &quot;&lt;br&gt;&quot;);</span><br><span class="line">&#125;</span><br><span class="line">%&gt;</span><br></pre></td></tr></table></figure>
+            <pre><code>&lt;!--
+</code></pre><p> text파일<br> xml파일을 읽어들여 form에 출력<br> json파일<br> DB에서 읽어 들여 form에 출력(ID중복확인용)<br> –&gt;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">&lt;h2&gt;Ajax Sample&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;button&gt;Ajax run&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">	$(function() &#123;</span><br><span class="line"></span><br><span class="line">		$(&quot;button&quot;).click(function() &#123;</span><br><span class="line"></span><br><span class="line">			$.ajax(&#123;</span><br><span class="line">				type : &apos;post&apos;,</span><br><span class="line">				url : &apos;./data.json&apos;, //	데이터 가지고 올 파일</span><br><span class="line">				datatype : &apos;json&apos;,</span><br><span class="line">				success : function(json) &#123;</span><br><span class="line">					//	alert(&quot;ajax success&quot;);</span><br><span class="line">					//	alert(&quot;json[0] version = &quot; + json[0].version);</span><br><span class="line">					//	alert(&quot;json[0] codename = &quot; + json[0].codename);</span><br><span class="line"></span><br><span class="line">					/*</span><br><span class="line">						for(i=0; i &lt; json.length; i++)&#123;</span><br><span class="line">							$(&quot;#demo&quot;).append(json[i].version + &quot;&lt;br&gt;&quot;);</span><br><span class="line">							$(&quot;#demo&quot;).append(json[i].codename + &quot;&lt;br&gt;&quot;);</span><br><span class="line">						&#125;</span><br><span class="line"></span><br><span class="line">					 */</span><br><span class="line"></span><br><span class="line">					$.each(json, function(i, item) &#123;	// 반복문 ,i는 돌아가는숫자, item은 json의 item</span><br><span class="line">						alert(&quot;i = &quot; + i);</span><br><span class="line">						alert(&quot;item = &quot; + item.version);</span><br><span class="line">						alert(&quot;item = &quot; + item.codename);</span><br><span class="line"></span><br><span class="line">					&#125;);</span><br><span class="line"></span><br><span class="line">				&#125;,</span><br><span class="line">				error : function() &#123;</span><br><span class="line">					alert(&quot;ajax error&quot;);</span><br><span class="line">				&#125;</span><br><span class="line"></span><br><span class="line">			&#125;);</span><br><span class="line">		&#125;);</span><br><span class="line">	&#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"> &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">	$(function() &#123;</span><br><span class="line"></span><br><span class="line">		$(&quot;button&quot;).click(function() &#123;</span><br><span class="line"></span><br><span class="line">			$.ajax(&#123;</span><br><span class="line">				type:&quot;post&quot;,</span><br><span class="line">				url:&quot;./jsonp.json&quot;,</span><br><span class="line">				dataType:&quot;jsonp&quot;,</span><br><span class="line">				jsonpCallback:&apos;android&apos;,</span><br><span class="line">				success:function(json)&#123;</span><br><span class="line">				//	alert(&quot;success&quot;);</span><br><span class="line">					$.each(json, function(i, item)&#123;</span><br><span class="line">						alert(i+&quot;:&quot;+item.name + &quot; &quot; + item.message);</span><br><span class="line">					&#125;);</span><br><span class="line">				&#125;,</span><br><span class="line">				error:function(xhr)&#123;</span><br><span class="line">					alert(&quot;error&quot;);</span><br><span class="line">				&#125;</span><br><span class="line"></span><br><span class="line">			&#125;);</span><br><span class="line"></span><br><span class="line">		&#125;);</span><br><span class="line"></span><br><span class="line">	&#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"> 2</span><br><span class="line"> &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">	$(function() &#123;</span><br><span class="line">		$(&quot;button&quot;).click(function() &#123;</span><br><span class="line"></span><br><span class="line">			$.ajax(&#123;</span><br><span class="line">				type:&quot;post&quot;,</span><br><span class="line">				url:&quot;https://iwb.jp/s/js/data.jsonp&quot;,</span><br><span class="line">				dataType:&quot;jsonp&quot;,</span><br><span class="line">				jsonpCallback: &quot;android&quot;,</span><br><span class="line">				success:function(json)&#123;</span><br><span class="line">					$.each(json, function(i, item)&#123;</span><br><span class="line">						$(&quot;body&quot;).prepend(i + &quot;:&quot; + item.version + &quot; &quot; + item.codename + &quot;&lt;br&gt;&quot;);</span><br><span class="line">					&#125;);</span><br><span class="line">				&#125;,</span><br><span class="line">				error:function(xhr)&#123;</span><br><span class="line">					alert(&quot;error&quot;);</span><br><span class="line">				&#125;</span><br><span class="line"></span><br><span class="line">			&#125;);</span><br><span class="line"></span><br><span class="line">		&#125;);</span><br><span class="line"></span><br><span class="line">	&#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">3</span><br><span class="line">var _xml;</span><br><span class="line">var _arrTarget = [];</span><br><span class="line">var _arrLink = [];</span><br><span class="line">var _arrDesc = [];</span><br><span class="line"></span><br><span class="line">$(function () &#123;</span><br><span class="line"></span><br><span class="line">	$(&quot;button&quot;).click(function () &#123;</span><br><span class="line"></span><br><span class="line">		$.ajax(&#123;</span><br><span class="line">			url:&apos;./data.xml&apos;,</span><br><span class="line">			dataType:&apos;xml&apos;,</span><br><span class="line">			success:function(data)&#123;</span><br><span class="line">			//	alert(&quot;success&quot;);</span><br><span class="line">				_xml = $(data).find(&quot;xmldata&quot;);</span><br><span class="line">				var len = _xml.find(&quot;news&quot;).length;</span><br><span class="line"></span><br><span class="line">				for(i=0; i&lt; len; i++)&#123;</span><br><span class="line"></span><br><span class="line">					_arrTarget[i] = _xml.find(&quot;news&quot;).eq(i).find(&quot;target&quot;).text();</span><br><span class="line">					_arrLink[i] = _xml.find(&quot;news&quot;).eq(i).find(&quot;link&quot;).text();</span><br><span class="line">					_arrDesc[i] = _xml.find(&quot;news&quot;).eq(i).find(&quot;name&quot;).text();</span><br><span class="line"></span><br><span class="line">					$(&quot;body&quot;).append(_arrTarget[i]).append(_arrLink[i]).append(_arrDesc[i]).append(&quot;&lt;br&gt;&quot;);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;,</span><br><span class="line">			error:function(xhr)&#123;</span><br><span class="line">				alert(&quot;error&quot;);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;);</span><br><span class="line">	&#125;);</span><br><span class="line"></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
         </div>
         <footer class="article-footer">
@@ -171,7 +176,7 @@
 
 
 
-    <a data-url="http://LazyRedRabbit.github.io/2018/02/05/JSP/내장객체의 사용/" data-id="cjda8i90m0008ggpcvldkvw01" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="http://LazyRedRabbit.github.io/2018/02/08/JSP/ajax2/" data-id="cjdebswnp0005hspctw0jbh04" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -308,20 +313,20 @@
         
 <nav id="article-nav">
     
-        <a href="/2018/02/08/JSP/ajax2/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2018/02/08/JSP/ajax3/" id="article-nav-newer" class="article-nav-link-wrap">
         <strong class="article-nav-caption">새로운</strong>
         <p class="article-nav-title">
         
-            AJAX 2
+            AJAX 3
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
     
     
-        <a href="/2018/02/05/JSP/JSP사이의 객체전달/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/02/05/JSP/내장객체의 사용/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">오래된</strong>
-        <p class="article-nav-title">JSP사이의 객체전달</p>
+        <p class="article-nav-title">내장객체의 사용</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -524,7 +529,7 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'http://LazyRedRabbit.github.io/2018/02/05/JSP/내장객체의 사용/';
+    var disqus_url = 'http://LazyRedRabbit.github.io/2018/02/08/JSP/ajax2/';
     
     (function() {
     var dsq = document.createElement('script');
